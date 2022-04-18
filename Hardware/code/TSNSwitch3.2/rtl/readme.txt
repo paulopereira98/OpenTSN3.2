@@ -1,3 +1,3 @@
-﻿本目录中各文件夹内容及用途说明如下：
-hcp：                主要包含TSN交换机3.2的硬件控制点HCP核心代码
-tsn_chip：         主要包含TSN交换机3.2的交换逻辑核心代码
+The contents and purposes of each folder in this directory are described as follows:
+hcp: Mainly contains the hardware control point HCP core code of TSN switch 3.2
+tsn_chip: Mainly contains the switching logic core code of TSN switch 3.2

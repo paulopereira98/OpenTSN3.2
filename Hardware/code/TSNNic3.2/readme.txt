@@ -1,3 +1,3 @@
-﻿本目录中各个文件夹说明如下：
-ipcore： TSN网卡的核心代码使用到的IP核配置参数说明信息，用户需按照IP配置参数说明信息生成IP核文件
-rtl：        TSN网卡的核心代码
+Each folder in this directory is described as follows:
+ipcore: The IP core configuration parameter description information used by the core code of the TSN network card, the user needs to generate the IP core file according to the IP configuration parameter description information
+rtl: The core code of the TSN network card

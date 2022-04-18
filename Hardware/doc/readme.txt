@@ -1,3 +1,3 @@
-1.本目录中各文件说明如下：
-设计方案：存放OpenTSN3.2交换机和网卡的设计方案
-使用手册：存放OpenTSN3.2交换机和网卡的使用手册
+1. Each file in this directory is described as follows:
+Design scheme: Design scheme for storing OpenTSN3.2 switches and network cards
+User Manual: Store the User Manual of OpenTSN3.2 switches and network cards

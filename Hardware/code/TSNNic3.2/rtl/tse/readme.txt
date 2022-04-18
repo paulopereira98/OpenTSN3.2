@@ -1,1 +1,1 @@
-﻿本目录下的rtl源文件是TSNNic3.2的端处理逻辑的核心代码。
+The rtl source file in this directory is the core code of the end processing logic of TSNNic3.2.

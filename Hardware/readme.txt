@@ -1,5 +1,5 @@
-﻿为了便于用户将OpenTSN硬件（包括TSN交换机、TSN网卡和TSN测试仪）移植到其他器件上以及将OpenTSN硬件的接口数量进行增加或缩减，将OpenTSN硬件代码拆分为两部分，即核心代码和器件与接口相关代码。
-本目录中各文件夹说明如下：
-code：              此文件夹用于存放OpenTSN硬件核心代码，此文件夹下的代码与器件和接口数量无关；用户若需要将OpenTSN硬件移植到其它FPGA器件或改变接口数量时，可参照project_demo文件夹下存放的（器件和接口相关）代码来编写对应器件代码和对应接口数量代码
-project_demo：      此文件夹用于存放OpenTSN硬件示例工程脚本自动编译相关文件；该文件夹下存放的代码为器件（Intel Arria10:10AX048H2F34E2SG）和接口数量（4个千兆接口）相关代码，但不存放OpenTSN硬件的核心代码；该文件夹下的代码和code文件夹下的代码合起来才是完整示例工程的代码
-doc：               此文件夹用于存放OpenTSN硬件设计文档与使用手册
+In order to facilitate users to port OpenTSN hardware (including TSN switches, TSN network cards and TSN testers) to other devices and increase or decrease the number of interfaces of OpenTSN hardware, the OpenTSN hardware code is divided into two parts, namely core code and device Code related to the interface.
+Each folder in this directory is described as follows:
+code: This folder is used to store the core code of OpenTSN hardware. The code in this folder has nothing to do with the number of devices and interfaces; if users need to transplant OpenTSN hardware to other FPGA devices or change the number of interfaces, they can refer to the project_demo folder for storage (device and interface related) code to write the corresponding device code and the corresponding interface quantity code
+project_demo: This folder is used to store OpenTSN hardware example project scripts to automatically compile related files; the code stored in this folder is the code related to the device (Intel Arria10:10AX048H2F34E2SG) and the number of interfaces (4 gigabit interfaces), but does not store OpenTSN The core code of the hardware; the code in this folder and the code in the code folder are the code of the complete example project
+doc: This folder is used to store OpenTSN hardware design documents and manuals

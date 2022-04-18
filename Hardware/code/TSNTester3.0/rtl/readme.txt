@@ -1,1 +1,1 @@
-﻿本目录下的rtl源文件是TSNTester3.0的核心代码。
+The rtl source file in this directory is the core code of TSNTester3.0.

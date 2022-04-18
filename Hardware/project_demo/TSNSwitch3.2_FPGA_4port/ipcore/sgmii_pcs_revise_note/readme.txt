@@ -1,18 +1,18 @@
-﻿                                    sgmii_pcs_share修改说明
-针对sgmii_pcs核的修改，是基于quartus软件在生成4端口IP核时，自身就存在问题，这里为配合用户方便使用，提供了以下一个修改方案仅供参考使用：
-1.路径\...\sgmii_pcs_share\synth下的 sgmii_pcs_share.v文件替换与修改
-按照参数配置生成好IP核文件后，打开\...\sgmii_pcs_share\synth路径：
-1）直接用sgmii_substitute.v替换掉路径下的sgmii_pcs_share.v文件；
-2）替换完成后将sgmii_substitute.v文件名改为“sgmii_pcs_share.v”；
-3）打开修改名称后的文件“sgmii_pcs_share.v”，第10行对应修改为“module sgmii_pcs_share (”；
-4）第124行修改为“sgmii_pcs_share_altera_eth_tse_191_3sjnh4y  eth_tse_0 (”
+sgmii_pcs_share modification instructions
+The modification of the sgmii_pcs core is based on the fact that quartus software has its own problems when generating a 4-port IP core. Here, for the convenience of users, the following modification scheme is provided for reference only:
+1. Replace and modify the sgmii_pcs_share.v file under the path\...\sgmii_pcs_share\synth
+After generating the IP core file according to the parameter configuration, open the \...\sgmii_pcs_share\synth path:
+1) Directly replace the sgmii_pcs_share.v file in the path with sgmii_substitute.v;
+2) After the replacement, change the file name of sgmii_substitute.v to "sgmii_pcs_share.v";
+3) Open the file "sgmii_pcs_share.v" with the modified name, and modify the 10th line to "module sgmii_pcs_share (";
+4) Modify line 124 to "sgmii_pcs_share_altera_eth_tse_191_3sjnh4y eth_tse_0 ("
 
-2.路径\...\sgmii_pcs_share\altera_eth_tse_191\synth下文件替换与修改
-打开\...\sgmii_pcs_share\altera_eth_tse_191\synth路径：
-1）用sgmii_eth_substitute.v文件替换掉路径下的sgmii_pcs_share_altera_eth_tse _191_3sjnh4y.v文件；
-2）将替换的文件名称修改sgmii_pcs_share_altera_eth_tse_191_3sjnh4y.v，
-3）打开名称修改后的sgmii_pcs_share_altera_eth_tse_191_3sjnh4y.v文本，将第10行修改为“module sgmii_pcs_share_altera_eth_tse_191_3sjnh4y (”；
-4）确认文本第437行实例化指向路径\...\sgmii_pcs_share\altera_lvds_191\synth的sgmii_pcs_share_altera_lvds_191_ecdu3ty.v文件，如指向错误，请修改；
-5）确认文本第449行实例化指向路径\...\sgmii_pcs_share\altera_lvds_191\synth的sgmii_pcs_share_altera_lvds_191_asrzfni.v文件，如指向错误，请修改；
+2. File replacement and modification under path\...\sgmii_pcs_share\altera_eth_tse_191\synth
+Open \...\sgmii_pcs_share\altera_eth_tse_191\synth path:
+1) Replace the sgmii_pcs_share_altera_eth_tse _191_3sjnh4y.v file in the path with the sgmii_eth_substitute.v file;
+2) Modify the replaced file name to sgmii_pcs_share_altera_eth_tse_191_3sjnh4y.v,
+3) Open the sgmii_pcs_share_altera_eth_tse_191_3sjnh4y.v text with the modified name, and modify the 10th line to "module sgmii_pcs_share_altera_eth_tse_191_3sjnh4y (";
+4) Confirm that the 437th line of the text instantiates the sgmii_pcs_share_altera_lvds_191_ecdu3ty.v file pointing to the path \...\sgmii_pcs_share\altera_lvds_191\synth. If it points to an error, please modify it;
+5) Confirm that the 449th line of the text instantiates the sgmii_pcs_share_altera_lvds_191_asrzfni.v file that points to the path \...\sgmii_pcs_share\altera_lvds_191\synth. If it points to an error, please modify it;
 
-修改完成后进行保存就完成了。
+After the modification is complete, save it.
