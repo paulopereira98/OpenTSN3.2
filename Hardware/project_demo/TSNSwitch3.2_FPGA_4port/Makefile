@@ -17,7 +17,8 @@ all: project run_synth run_fit run_asm run_sta run_eda
 project:
 	quartus_sh -t create_project.tcl
 run_synth:
-	quartus_map TSN_FPGA_4port
+	#quartus_map TSN_FPGA_4port
+	quartus_syn TSN_FPGA_4port
 run_fit:
 	quartus_fit TSN_FPGA_4port
 run_asm:

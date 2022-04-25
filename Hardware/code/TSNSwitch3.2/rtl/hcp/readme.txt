@@ -1,1 +1,1 @@
-﻿本目录下的rtl源文件是TSNSwitch3.2的硬件控制点的核心代码。
+The rtl source file in this directory is the core code of the hardware control point of TSNSwitch3.2.
